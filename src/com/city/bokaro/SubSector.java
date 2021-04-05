@@ -6,7 +6,7 @@ public class SubSector extends Sector{
     private String subSectorName;
     private String sectorName;
 
-    public SubSector(int id, Set<Block> blocks, Set<School> schools, CommunityCentre communityCentre, HealthCentre healthCentre, MaintenanceOffice maintenanceOffice, String subSectorName) {
+    public SubSector(int id, String subSectorName , Set<Block> blocks, Set<School> schools, CommunityCentre communityCentre, HealthCentre healthCentre, MaintenanceOffice maintenanceOffice) {
         super(id, blocks, schools, communityCentre, healthCentre, maintenanceOffice);
         this.subSectorName = subSectorName;
         this.sectorName = id+subSectorName;
